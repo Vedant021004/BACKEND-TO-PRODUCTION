@@ -1,390 +1,766 @@
-# 🐍 Python Backend Engineering Roadmap
+# 🚀 Python Backend + GenAI Engineering Roadmap
 
-A structured, project-based roadmap to becoming a **job-ready Python Backend Developer** by learning modern backend engineering concepts, building real-world applications, and deploying production-ready systems.
+> A practical, step-by-step journey to becoming a job-ready Python Backend and Applied GenAI Engineer.
 
-This repository documents my journey from professional Python programming to backend architecture, cloud deployment, and system design.
+This repository is my personal learning roadmap, coding practice tracker, and project documentation.
 
-> **Goal:** Become capable of independently designing, developing, testing, securing, deploying, and maintaining production-grade backend applications.
+**Target:** Become internship-ready by March 2027.
+
+**Learning approach:** Understand → Code → Build → Test → Deploy.
 
 ---
 
-## 🎯 Learning Objectives
+# 🎯 What Am I Learning?
 
-By completing this roadmap, I aim to:
+I am focusing on two major engineering domains:
 
-- Build scalable REST APIs using Python and FastAPI.
-- Design and manage relational databases using PostgreSQL.
-- Implement authentication and authorization systems.
-- Understand asynchronous programming and background processing.
-- Write reliable code using automated testing.
-- Containerize applications using Docker.
-- Build CI/CD pipelines using GitHub Actions.
-- Deploy backend applications using AWS.
-- Understand backend architecture and system design.
-- Develop production-ready applications independently.
+### 1. Backend Engineering
+Learning how to build APIs, manage databases, handle authentication, process background jobs, and deploy scalable applications.
+
+### 2. Applied GenAI Engineering
+Learning how to integrate LLMs, Transformers, embeddings, RAG, and AI agents into real-world backend applications.
+
+My goal is not just to learn technologies, but to understand how they work together in production systems.
 
 ---
 
 # 🗺️ Complete Learning Roadmap
 
-## Phase 1 — Professional Python
+## PHASE 01 — Python Programming Foundations
 
-**Objective:** Strengthen Python knowledge for professional backend development.
+**Why am I learning this?**
 
-### Topics
+Python is the foundation of my backend and AI development journey. I need to write clean, modular, reusable code.
+
+### Topics to Learn
+
 - [ ] Python fundamentals revision
-- [ ] Object-Oriented Programming
-- [ ] Inheritance and composition
-- [ ] Type hints and type checking
+- [ ] Object-Oriented Programming (OOP)
+- [ ] Classes and Objects
+- [ ] Inheritance and Polymorphism
+- [ ] Encapsulation and Abstraction
+- [ ] Composition
 - [ ] Decorators
-- [ ] Generators and iterators
-- [ ] Exception handling
-- [ ] Context managers
-- [ ] Modules and packages
-- [ ] Virtual environments and dependency management
-- [ ] Async programming
-- [ ] `async` and `await`
-- [ ] Concurrency fundamentals
+- [ ] Generators and Iterators
+- [ ] Type Hints
+- [ ] Exception Handling
+- [ ] Context Managers
+- [ ] Modules and Packages
+- [ ] Async and Await
+- [ ] Concurrency Fundamentals
+- [ ] Virtual Environments
 
-**Practical Task:** Build a modular Python application with proper exception handling, type hints, and reusable components.
+**Practice:**
+- Build modular Python applications.
+- Write reusable functions and classes.
+- Handle errors properly.
+- Understand asynchronous execution.
+
+**Expected Outcome:** Ability to write professional, maintainable Python code.
 
 ---
 
-## Phase 2 — HTTP, Networking & REST APIs
+## PHASE 02 — Git, GitHub and Linux
 
-**Objective:** Understand how backend applications communicate over the internet.
+**Why am I learning this?**
 
-### Topics
-- [ ] Client-server architecture
-- [ ] HTTP request and response lifecycle
-- [ ] HTTP methods: GET, POST, PUT, PATCH, DELETE
-- [ ] HTTP status codes
-- [ ] Request headers and response headers
-- [ ] JSON and serialization
-- [ ] REST API principles
-- [ ] DNS fundamentals
-- [ ] TCP/IP fundamentals
-- [ ] HTTPS and TLS
-- [ ] Cookies and sessions
+Backend developers work with source control, remote servers, command-line environments, and collaborative development.
+
+### Topics to Learn
+
+**Git and GitHub**
+- [ ] Git initialization
+- [ ] Add, Commit and Push
+- [ ] Branching and Merging
+- [ ] Merge Conflicts
+- [ ] Rebase and Cherry-pick
+- [ ] Git Stash
+- [ ] Pull Requests
+- [ ] Code Reviews
+- [ ] .gitignore
+- [ ] GitHub Secrets
+
+**Linux**
+- [ ] Linux Commands
+- [ ] Filesystem Structure
+- [ ] File Permissions
+- [ ] Users and Groups
+- [ ] Process Management
+- [ ] Environment Variables
+- [ ] SSH
+- [ ] Bash Scripting
+- [ ] Logs and Troubleshooting
+
+**Practice:**
+- Create GitHub repositories.
+- Work with feature branches.
+- Resolve merge conflicts.
+- Connect to a Linux server using SSH.
+
+**Expected Outcome:** Ability to manage projects and work comfortably in Linux environments.
+
+---
+
+## PHASE 03 — HTTP, Networking and REST APIs
+
+**Why am I learning this?**
+
+Before building backend applications, I need to understand how clients, servers, and APIs communicate.
+
+### Topics to Learn
+
+- [ ] Client-Server Architecture
+- [ ] HTTP and HTTPS
+- [ ] HTTP Request and Response
+- [ ] GET, POST, PUT, PATCH, DELETE
+- [ ] HTTP Status Codes
+- [ ] Request and Response Headers
+- [ ] JSON Serialization
+- [ ] DNS Fundamentals
+- [ ] TCP/IP Fundamentals
+- [ ] Cookies and Sessions
 - [ ] CORS
+- [ ] REST API Principles
+- [ ] API Versioning
+- [ ] Pagination
 - [ ] Idempotency
 
-**Practical Task:** Design and test a REST API using an HTTP client.
+**Practice:**
+- Design REST API endpoints.
+- Test APIs using Postman.
+- Understand request-response lifecycles.
+
+**Expected Outcome:** Ability to understand and design RESTful APIs.
 
 ---
 
-## Phase 3 — FastAPI
+## PHASE 04 — FastAPI Framework
 
-**Objective:** Build modern, high-performance backend APIs using Python.
+**Why am I learning this?**
 
-### Topics
-- [ ] FastAPI fundamentals
-- [ ] Routing and endpoints
-- [ ] Path and query parameters
-- [ ] Request bodies
-- [ ] Pydantic models
-- [ ] Response models
-- [ ] Dependency injection
+FastAPI will be my primary Python backend framework. I will use it to build APIs for traditional applications and AI-powered systems.
+
+### Topics to Learn
+
+- [ ] FastAPI Fundamentals
+- [ ] Routing and Endpoints
+- [ ] Path Parameters
+- [ ] Query Parameters
+- [ ] Request Bodies
+- [ ] Pydantic Models
+- [ ] Response Models
+- [ ] Dependency Injection
 - [ ] Middleware
-- [ ] Exception handling
-- [ ] Async endpoints
-- [ ] File uploads
-- [ ] API documentation with Swagger/OpenAPI
-- [ ] Application configuration
-- [ ] Project structure and modular architecture
+- [ ] Exception Handling
+- [ ] Async Endpoints
+- [ ] File Uploads
+- [ ] Swagger and OpenAPI
+- [ ] Application Configuration
+- [ ] Modular Project Structure
 
-**Practical Project:** Task Management REST API.
+**Practice Project:** Task Management REST API.
+
+Features:
+- Create tasks
+- Update tasks
+- Delete tasks
+- Retrieve tasks
+- Validate incoming data
+
+**Expected Outcome:** Ability to independently build REST APIs using FastAPI.
 
 ---
 
-## Phase 4 — SQL & PostgreSQL
+## PHASE 05 — SQL and PostgreSQL
 
-**Objective:** Learn relational database design and querying.
+**Why am I learning this?**
 
-### Topics
-- [ ] Relational database fundamentals
-- [ ] PostgreSQL installation and setup
-- [ ] Database and table creation
-- [ ] CRUD operations
-- [ ] Primary and foreign keys
+Almost every serious backend application needs persistent data storage. PostgreSQL will be my primary relational database.
+
+### Topics to Learn
+
+- [ ] Database Fundamentals
+- [ ] Relational Database Concepts
+- [ ] PostgreSQL Setup
+- [ ] Database and Table Creation
+- [ ] CRUD Operations
+- [ ] Primary and Foreign Keys
 - [ ] Joins
 - [ ] Subqueries
-- [ ] Common Table Expressions (CTEs)
-- [ ] Window functions
-- [ ] Database normalization
+- [ ] Common Table Expressions
+- [ ] Window Functions
+- [ ] Database Normalization
 - [ ] Indexes
 - [ ] Transactions
-- [ ] ACID properties
-- [ ] Query optimization
-- [ ] EXPLAIN and query plans
+- [ ] ACID Properties
+- [ ] Query Optimization
+- [ ] EXPLAIN and Query Plans
 
-**Practical Task:** Design a normalized PostgreSQL database for the Task Management API.
+**Practice Project:** Design a relational database for a Task Management application.
 
----
-
-## Phase 5 — SQLAlchemy & Alembic
-
-**Objective:** Connect Python applications to databases using professional ORM practices.
-
-### Topics
-- [ ] ORM fundamentals
-- [ ] SQLAlchemy models
-- [ ] Database relationships
-- [ ] One-to-one, one-to-many, and many-to-many relationships
-- [ ] Database sessions
-- [ ] Connection pooling
-- [ ] CRUD operations using ORM
-- [ ] Alembic migrations
-- [ ] N+1 query problem
-- [ ] Transaction management
-
-**Practical Task:** Integrate PostgreSQL with FastAPI using SQLAlchemy and Alembic.
+**Expected Outcome:** Ability to design databases, write SQL queries, and optimize database operations.
 
 ---
 
-## Phase 6 — Authentication & Security
+## PHASE 06 — SQLAlchemy and Alembic
 
-**Objective:** Protect APIs and implement secure user access.
+**Why am I learning this?**
 
-### Topics
-- [ ] Authentication vs authorization
-- [ ] Password hashing
-- [ ] JWT access tokens
-- [ ] Refresh tokens
-- [ ] OAuth2 fundamentals
+SQLAlchemy allows Python applications to interact with databases through an ORM. Alembic helps manage database schema changes.
+
+### Topics to Learn
+
+- [ ] ORM Fundamentals
+- [ ] SQLAlchemy Models
+- [ ] Database Relationships
+- [ ] One-to-One Relationships
+- [ ] One-to-Many Relationships
+- [ ] Many-to-Many Relationships
+- [ ] Database Sessions
+- [ ] Connection Pooling
+- [ ] ORM CRUD Operations
+- [ ] Alembic Migrations
+- [ ] Transaction Management
+- [ ] N+1 Query Problem
+
+**Practice:**
+- Connect FastAPI to PostgreSQL.
+- Implement database models.
+- Create and execute migrations.
+- Handle database sessions correctly.
+
+**Expected Outcome:** Ability to integrate and manage PostgreSQL databases in Python backend applications.
+
+---
+
+## PHASE 07 — Authentication and Backend Security
+
+**Why am I learning this?**
+
+Backend applications must protect user information and control access to resources.
+
+### Topics to Learn
+
+- [ ] Authentication vs Authorization
+- [ ] Password Hashing
+- [ ] JWT Authentication
+- [ ] Access Tokens
+- [ ] Refresh Tokens
+- [ ] OAuth2 Fundamentals
 - [ ] Role-Based Access Control (RBAC)
-- [ ] API key authentication
-- [ ] Rate limiting
-- [ ] Environment variables and secrets
-- [ ] Input validation
-- [ ] OWASP API Security fundamentals
-- [ ] Secure error handling
+- [ ] API Key Authentication
+- [ ] Rate Limiting
+- [ ] Input Validation
+- [ ] Environment Variables
+- [ ] Secrets Management
+- [ ] OWASP API Security
 
-**Practical Task:** Implement registration, login, JWT authentication, and admin/user permissions.
+**Practice Project:** Secure User Authentication System.
 
----
+Features:
+- User registration
+- User login
+- JWT authentication
+- Password hashing
+- Admin and user roles
+- Protected routes
 
-## Phase 7 — Redis & Background Processing
-
-**Objective:** Improve backend performance and handle tasks asynchronously.
-
-### Topics
-- [ ] Redis fundamentals
-- [ ] Key-value data structures
-- [ ] Caching strategies
-- [ ] Cache invalidation
-- [ ] Rate limiting with Redis
-- [ ] Background tasks
-- [ ] Task queues
-- [ ] Job retries
-- [ ] Scheduled jobs
-- [ ] Idempotent task processing
-
-**Practical Task:** Add caching and background email/notification processing to the application.
+**Expected Outcome:** Ability to develop secure backend APIs.
 
 ---
 
-## Phase 8 — Testing & Code Quality
+## PHASE 08 — Redis, Celery and Message Queues
 
-**Objective:** Write reliable and maintainable backend applications.
+**Why am I learning this?**
 
-### Topics
-- [ ] Testing fundamentals
+Real-world backend applications need caching, asynchronous processing, scheduled jobs, and communication between services.
+
+### Redis
+
+- [ ] Redis Fundamentals
+- [ ] Key-Value Storage
+- [ ] Caching
+- [ ] Cache Invalidation
+- [ ] Rate Limiting
+- [ ] Redis Data Structures
+
+### Celery
+
+- [ ] Celery Architecture
+- [ ] Background Tasks
+- [ ] Task Execution
+- [ ] Task Retries
+- [ ] Celery Beat
+- [ ] Scheduled Tasks
+
+### Message Queues
+
+- [ ] Message Queue Fundamentals
+- [ ] Producers and Consumers
+- [ ] RabbitMQ
+- [ ] Exchanges and Queues
+- [ ] Acknowledgements
+- [ ] Delivery and Retry Concepts
+- [ ] Kafka Fundamentals
+- [ ] Topics and Partitions
+- [ ] Consumer Groups
+
+**Practice Project:** Asynchronous Document Processing System.
+
+Example:
+1. User uploads a document.
+2. Backend receives the file.
+3. A background task processes it.
+4. Processing status is stored in PostgreSQL.
+5. Redis manages caching.
+6. The user receives the processing result.
+
+**Expected Outcome:** Ability to handle background jobs and understand message-driven backend architecture.
+
+---
+
+## PHASE 09 — Testing and Code Quality
+
+**Why am I learning this?**
+
+Production applications need reliable code. Testing helps detect bugs before deployment.
+
+### Topics to Learn
+
+- [ ] Testing Fundamentals
 - [ ] Pytest
-- [ ] Unit testing
-- [ ] Integration testing
-- [ ] API testing
+- [ ] Unit Testing
+- [ ] Integration Testing
+- [ ] API Testing
 - [ ] Fixtures
 - [ ] Mocking
-- [ ] Test databases
-- [ ] Test coverage
-- [ ] Code formatting and linting
+- [ ] Test Databases
+- [ ] Test Coverage
+- [ ] Code Formatting
+- [ ] Linting
 
-**Practical Task:** Write automated tests for API endpoints, database operations, and authentication.
+**Practice:**
+- Write tests for API endpoints.
+- Test database operations.
+- Test authentication.
+- Automate the testing process.
+
+**Expected Outcome:** Ability to write and maintain reliable backend applications.
 
 ---
 
-## Phase 9 — Docker & Linux
+## PHASE 10 — Docker and Containerization
 
-**Objective:** Understand application packaging and deployment environments.
+**Why am I learning this?**
 
-### Topics
-- [ ] Linux fundamentals
-- [ ] Linux file system and permissions
-- [ ] Processes and services
-- [ ] Shell commands and scripting
-- [ ] Docker fundamentals
-- [ ] Images and containers
+Docker allows applications and their dependencies to run consistently across different environments.
+
+### Topics to Learn
+
+- [ ] Virtual Machines vs Containers
+- [ ] Docker Architecture
+- [ ] Docker Engine
+- [ ] Images and Containers
+- [ ] Docker Hub
+- [ ] Docker Commands
 - [ ] Dockerfile
-- [ ] Docker volumes
-- [ ] Docker networking
+- [ ] Image Layers
+- [ ] Docker Volumes
+- [ ] Docker Networking
+- [ ] Port Mapping
+- [ ] Environment Variables
 - [ ] Docker Compose
-- [ ] Multi-stage builds
-- [ ] Environment configuration
+- [ ] Multi-Stage Builds
+- [ ] Container Security
+- [ ] Image Optimization
 
-**Practical Task:** Containerize the FastAPI application and PostgreSQL database using Docker Compose.
+**Practice Project:** Containerize FastAPI + PostgreSQL + Redis.
+
+**Expected Outcome:** Ability to package and run multi-service backend applications using Docker.
 
 ---
 
-## Phase 10 — CI/CD & AWS Cloud
+## PHASE 11 — CI/CD and Automation
 
-**Objective:** Automate application testing, building, and deployment.
+**Why am I learning this?**
 
-### Topics
-- [ ] Git and GitHub workflows
-- [ ] GitHub Actions
+CI/CD automates software testing, building, and deployment. It helps developers release applications reliably.
+
+### Topics to Learn
+
 - [ ] Continuous Integration
+- [ ] Continuous Delivery
 - [ ] Continuous Deployment
-- [ ] Automated testing pipelines
-- [ ] Docker image builds
-- [ ] AWS IAM
-- [ ] AWS EC2
-- [ ] AWS S3
-- [ ] AWS VPC fundamentals
-- [ ] Application deployment
-- [ ] Logs and monitoring
-- [ ] Health checks
-- [ ] Deployment and rollback strategies
+- [ ] CI/CD Pipeline Architecture
+- [ ] GitHub Actions
+- [ ] Workflow YAML
+- [ ] Workflow Triggers
+- [ ] Jobs and Steps
+- [ ] GitHub Runners
+- [ ] Automated Testing
+- [ ] Docker Image Builds
+- [ ] Container Registries
+- [ ] GitHub Secrets
+- [ ] Deployment Automation
+- [ ] Rollback Strategies
 
-**Practical Task:** Deploy the backend application using AWS and automate its pipeline with GitHub Actions.
+**Practice Project:** Create a GitHub Actions pipeline that:
 
----
+1. Runs whenever code is pushed.
+2. Installs dependencies.
+3. Executes automated tests.
+4. Builds a Docker image.
+5. Pushes the image to a registry.
+6. Deploys the application.
 
-## Phase 11 — Backend System Design
-
-**Objective:** Understand how scalable backend systems are designed.
-
-### Topics
-- [ ] Monolithic architecture
-- [ ] Modular monolith
-- [ ] Microservices fundamentals
-- [ ] SOLID principles
-- [ ] Design patterns
-- [ ] Load balancing
-- [ ] Caching architecture
-- [ ] Message queues
-- [ ] Database scaling
-- [ ] Horizontal and vertical scaling
-- [ ] Fault tolerance
-- [ ] Observability
-- [ ] Logging, metrics, and tracing
-- [ ] High availability
-- [ ] Distributed systems fundamentals
-
-**Practical Task:** Design and document a scalable backend architecture for a real-world application.
+**Expected Outcome:** Ability to automate application build, testing, and deployment.
 
 ---
 
-# 🚀 Capstone Project
+## PHASE 12 — AWS Cloud and Deployment
 
-## AI-Powered Document Intelligence Backend
+**Why am I learning this?**
 
-The final project will combine backend engineering with my existing AI and RAG knowledge.
+Applications need infrastructure to run and serve users. AWS provides cloud services for deploying and managing backend applications.
 
-### Proposed Technology Stack
+### Topics to Learn
 
-| Component | Technology |
+- [ ] Cloud Computing Fundamentals
+- [ ] AWS Fundamentals
+- [ ] IAM Users, Roles and Policies
+- [ ] EC2
+- [ ] S3
+- [ ] VPC
+- [ ] Subnets
+- [ ] Security Groups
+- [ ] SSH Deployment
+- [ ] Nginx
+- [ ] Domain Configuration
+- [ ] HTTPS and SSL
+- [ ] CloudWatch
+- [ ] Application Deployment
+- [ ] Health Checks
+- [ ] Backup and Recovery
+
+**Practice Project:** Deploy a Dockerized FastAPI application on AWS EC2.
+
+**Expected Outcome:** Ability to deploy and operate a backend application in the cloud.
+
+---
+
+## PHASE 13 — Monitoring and Observability
+
+**Why am I learning this?**
+
+A deployed application must be monitored to understand errors, performance, availability, and resource usage.
+
+### Topics to Learn
+
+- [ ] Application Logging
+- [ ] Structured Logging
+- [ ] Metrics
+- [ ] Distributed Tracing Fundamentals
+- [ ] Prometheus
+- [ ] Grafana
+- [ ] Health Checks
+- [ ] Readiness and Liveness
+- [ ] Alerting
+- [ ] Performance Monitoring
+- [ ] Error Tracking
+
+**Practice Project:** Create a monitoring dashboard for the deployed backend.
+
+**Expected Outcome:** Ability to observe and troubleshoot production applications.
+
+---
+
+## PHASE 14 — Backend System Design
+
+**Why am I learning this?**
+
+System design helps me understand how real-world applications are structured to handle growing users, data, and traffic.
+
+### Topics to Learn
+
+- [ ] Monolithic Architecture
+- [ ] Modular Monolith
+- [ ] Microservices Fundamentals
+- [ ] SOLID Principles
+- [ ] Design Patterns
+- [ ] Load Balancing
+- [ ] Caching Architecture
+- [ ] Database Scaling
+- [ ] Horizontal Scaling
+- [ ] Vertical Scaling
+- [ ] Message Queues
+- [ ] Distributed Systems
+- [ ] Fault Tolerance
+- [ ] High Availability
+- [ ] Reliability and Observability
+
+**Practice:**
+- Design an e-commerce backend.
+- Design a URL shortener.
+- Design a notification system.
+- Explain architectural decisions and trade-offs.
+
+**Expected Outcome:** Ability to understand and design scalable backend systems.
+
+---
+
+## PHASE 15 — LLM, RAG and AI Integration
+
+**Why am I learning this?**
+
+I want to combine backend engineering with Generative AI and build intelligent applications using modern LLM technologies.
+
+### Machine Learning and Deep Learning Foundations
+
+- [ ] Machine Learning Fundamentals
+- [ ] Supervised and Unsupervised Learning
+- [ ] Model Evaluation
+- [ ] Neural Network Fundamentals
+- [ ] Deep Learning Basics
+- [ ] NLP Fundamentals
+
+### LLM and Transformer Concepts
+
+- [ ] Transformer Architecture
+- [ ] Attention Mechanism
+- [ ] Tokenization
+- [ ] Embeddings
+- [ ] Context Windows
+- [ ] Prompt Engineering
+- [ ] LLM APIs
+- [ ] Structured Outputs
+- [ ] Function and Tool Calling
+
+### RAG Engineering
+
+- [ ] Document Ingestion
+- [ ] Text Chunking
+- [ ] Embedding Models
+- [ ] Vector Databases
+- [ ] Similarity Search
+- [ ] Metadata Filtering
+- [ ] Hybrid Search
+- [ ] BM25
+- [ ] Reranking
+- [ ] Query Rewriting
+- [ ] RAG Evaluation
+
+### AI Frameworks
+
+- [ ] LangChain
+- [ ] LangGraph
+- [ ] State and Nodes
+- [ ] Conditional Edges
+- [ ] Tool Calling
+- [ ] Checkpointing
+- [ ] Multi-Agent Fundamentals
+- [ ] AI Workflow Evaluation
+
+### Backend AI Integration
+
+- [ ] Integrate LLM APIs with FastAPI
+- [ ] Build RAG APIs
+- [ ] Handle document uploads
+- [ ] Process documents asynchronously
+- [ ] Store embeddings
+- [ ] Manage conversation history
+- [ ] Handle API errors and rate limits
+- [ ] Monitor AI application performance
+
+**Practice Project:** AI-Powered Document Intelligence Platform.
+
+**Expected Outcome:** Ability to build and deploy AI-powered backend applications.
+
+---
+
+# 🏗️ Final Capstone Project
+
+## AI-Powered Document Intelligence Platform
+
+The final project will combine my backend, cloud, DevOps, and GenAI knowledge.
+
+### Technology Stack
+
+| Layer | Technology |
 |---|---|
-| Programming Language | Python |
+| Programming | Python |
 | Backend Framework | FastAPI |
 | Validation | Pydantic |
 | Database | PostgreSQL |
 | ORM | SQLAlchemy |
 | Migrations | Alembic |
 | Cache | Redis |
+| Background Tasks | Celery |
+| Message Broker | RabbitMQ |
 | AI Orchestration | LangChain / LangGraph |
 | Retrieval | RAG |
 | Testing | Pytest |
 | Containerization | Docker |
 | CI/CD | GitHub Actions |
 | Cloud | AWS |
+| Monitoring | Prometheus + Grafana |
 
-### Planned Features
+### Application Workflow
 
-- User registration and authentication.
-- Document upload and processing.
-- Document metadata management.
-- AI-powered document question answering.
-- Retrieval and response generation.
-- Background document processing.
-- Role-based access control.
-- API testing and validation.
-- Containerized deployment.
-- Automated CI/CD pipeline.
+```text
+              USER
+                |
+                v
+          FastAPI Backend
+                |
+        +-------+-------+
+        |               |
+        v               v
+   PostgreSQL         Redis
+        |               |
+        v               v
+   Document Data    Task Queue
+                        |
+                        v
+                      Celery
+                        |
+                        v
+                Document Processing
+                        |
+                        v
+                 Embeddings / RAG
+                        |
+                        v
+                  LLM Integration
+                        |
+                        v
+                  Final Response
+```
 
-### Final Goal
+### Deployment Workflow
 
-Build an application that demonstrates both **strong backend engineering fundamentals and practical AI integration**.
+```text
+Developer
+    |
+    v
+GitHub Repository
+    |
+    v
+GitHub Actions
+    |
+    v
+Automated Tests
+    |
+    v
+Docker Image Build
+    |
+    v
+Container Registry
+    |
+    v
+AWS Deployment
+    |
+    v
+Prometheus + Grafana
+    |
+    v
+Live Application
+```
+
+---
+
+# 📅 Four-Month Execution Plan
+
+| Month | Main Focus |
+|---|---|
+| November 2026 | Python, Git, Linux, HTTP, FastAPI |
+| December 2026 | PostgreSQL, SQLAlchemy, Authentication |
+| January 2027 | Redis, Celery, Testing, Docker |
+| February 2027 | CI/CD, AWS, Monitoring, System Design, AI Integration |
+| March 2027 | Portfolio, Interviews and Internship Applications |
+
+*The timeline is a target, not a guarantee. I will prioritize hands-on implementation and apply for internships before completing every advanced topic.*
 
 ---
 
 # 📚 Learning Resources
 
-| Resource | Purpose |
+| Area | Resource |
 |---|---|
-| [Corey Schafer](https://www.youtube.com/@coreyms) | Python programming |
-| [FastAPI Documentation](https://fastapi.tiangolo.com/tutorial/) | FastAPI |
-| [PostgreSQL Documentation](https://www.postgresql.org/docs/) | SQL and PostgreSQL |
-| [SQLAlchemy Documentation](https://docs.sqlalchemy.org/) | ORM |
-| [Redis Documentation](https://redis.io/docs/latest/) | Caching |
-| [Pytest Documentation](https://docs.pytest.org/) | Testing |
-| [Docker Documentation](https://docs.docker.com/) | Containerization |
-| [GitHub Actions Documentation](https://docs.github.com/en/actions) | CI/CD |
-| [AWS Documentation](https://docs.aws.amazon.com/) | Cloud deployment |
-| [Hussein Nasser](https://www.youtube.com/@hnasr) | Backend internals and system design |
+| Python | [Corey Schafer](https://www.youtube.com/@coreyms) |
+| FastAPI | [Official Documentation](https://fastapi.tiangolo.com/tutorial/) |
+| PostgreSQL | [PostgreSQL Docs](https://www.postgresql.org/docs/) |
+| SQLAlchemy | [SQLAlchemy Docs](https://docs.sqlalchemy.org/) |
+| Redis | [Redis Docs](https://redis.io/docs/latest/) |
+| Celery | [Celery Docs](https://docs.celeryq.dev/) |
+| Docker | [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana) |
+| GitHub Actions | [GitHub Actions Docs](https://docs.github.com/en/actions) |
+| AWS | [AWS Documentation](https://docs.aws.amazon.com/) |
+| System Design | [Hussein Nasser](https://www.youtube.com/@hnasr) |
+| LangChain | [LangChain Docs](https://python.langchain.com/docs/) |
+| LangGraph | [LangGraph Docs](https://langchain-ai.github.io/langgraph/) |
 
 ---
 
-# 📈 Progress Tracker
+# 📊 Overall Progress Tracker
+
+Update the status of each phase as I complete it.
 
 | Phase | Status |
 |---|---|
-| Professional Python | ⬜ Not Started |
-| HTTP & REST APIs | ⬜ Not Started |
-| FastAPI | ⬜ Not Started |
-| SQL & PostgreSQL | ⬜ Not Started |
-| SQLAlchemy & Alembic | ⬜ Not Started |
-| Authentication & Security | ⬜ Not Started |
-| Redis & Background Processing | ⬜ Not Started |
-| Testing & Code Quality | ⬜ Not Started |
-| Docker & Linux | ⬜ Not Started |
-| CI/CD & AWS | ⬜ Not Started |
-| Backend System Design | ⬜ Not Started |
-| Capstone Project | ⬜ Not Started |
-
-*Update the status as each phase progresses.*
+| 01. Python Foundations | ⬜ Not Started |
+| 02. Git, GitHub and Linux | ⬜ Not Started |
+| 03. HTTP and REST APIs | ⬜ Not Started |
+| 04. FastAPI | ⬜ Not Started |
+| 05. SQL and PostgreSQL | ⬜ Not Started |
+| 06. SQLAlchemy and Alembic | ⬜ Not Started |
+| 07. Authentication and Security | ⬜ Not Started |
+| 08. Redis, Celery and Queues | ⬜ Not Started |
+| 09. Testing and Code Quality | ⬜ Not Started |
+| 10. Docker | ⬜ Not Started |
+| 11. CI/CD | ⬜ Not Started |
+| 12. AWS Cloud | ⬜ Not Started |
+| 13. Monitoring | ⬜ Not Started |
+| 14. System Design | ⬜ Not Started |
+| 15. LLM, RAG and AI Integration | ⬜ Not Started |
+| Final Capstone | ⬜ Not Started |
 
 ---
 
-# 🎯 Completion Criteria
+# ✅ Internship Readiness Checklist
 
-I will consider this roadmap successfully completed when I can:
+I will consider myself ready to apply when I can:
 
-- [ ] Independently develop a REST API using FastAPI.
-- [ ] Design and optimize a PostgreSQL database.
-- [ ] Implement secure authentication and authorization.
-- [ ] Integrate Redis and background processing.
+- [ ] Independently build REST APIs using FastAPI.
+- [ ] Design and manage PostgreSQL databases.
+- [ ] Use SQLAlchemy and Alembic.
+- [ ] Implement secure authentication.
+- [ ] Build caching and background processing systems.
 - [ ] Write unit and integration tests.
-- [ ] Containerize an application with Docker.
-- [ ] Create a working CI/CD pipeline.
-- [ ] Deploy an application on AWS.
-- [ ] Explain backend architecture and system design decisions.
-- [ ] Build and demonstrate a complete production-style backend project.
+- [ ] Containerize applications using Docker.
+- [ ] Build CI/CD pipelines using GitHub Actions.
+- [ ] Deploy applications on AWS.
+- [ ] Monitor and troubleshoot applications.
+- [ ] Explain backend system design.
+- [ ] Integrate LLM and RAG functionality.
+- [ ] Demonstrate at least two polished projects on GitHub.
+- [ ] Explain my code and technical decisions in interviews.
 
 ---
 
-## 💡 Learning Philosophy
+# 💡 My Learning Philosophy
 
-> Don't just watch tutorials. Understand the concepts, write the code, break things, debug errors, and build real applications.
+> Don't just watch tutorials. Build things. Break things. Debug things. Understand why they work.
 
-**Consistency over consumption. Implementation over memorization. Engineering over tutorial completion.**
+My focus will be:
+
+- Practical implementation over passive learning.
+- Strong fundamentals over collecting technologies.
+- Real-world projects over tutorial-only projects.
+- Understanding architecture over memorizing code.
+- Consistency over perfection.
+
+**Final Goal:** Become a capable Python Backend + Applied GenAI Engineer who can independently build, test, deploy, and maintain production-style applications.
 
 ---
 
-## 📌 Repository Purpose
-
-This repository serves as my personal learning tracker, technical reference, and practical record of my journey toward becoming a Python Backend Engineer.
-
-**Stack Focus:** Python · FastAPI · PostgreSQL · SQLAlchemy · Redis · Docker · AWS · CI/CD · System Design
-
-⭐ If this roadmap helps you, feel free to fork it and follow your own backend engineering journey.
+⭐ This repository represents my journey toward mastering Python Backend Engineering, DevOps, Cloud Infrastructure, and Applied Generative AI.
