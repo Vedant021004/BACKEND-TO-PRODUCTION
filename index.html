@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Management</title>
+</head>
+<body>
+
+    <h1>Patient Management System</h1>
+
+    <button onclick="callAPI('/')">Home API</button>
+    <button onclick="callAPI('/about')">About API</button>
+    <button onclick="callAPI('/view')">View All Patients</button>
+
+    <br><br>
+
+    <input type="text" id="patient_id" placeholder="Enter Patient ID">
+
+    <button onclick="getPatient()">Get Patient</button>
+
+    <h3>API Response:</h3>
+
+    <pre id="result">Click any button...</pre>
+
+    <script>
+
+        const API = "http://127.0.0.1:8000";
+
+        async function callAPI(endpoint) {
+            try {
+                const response = await fetch(API + endpoint);
+                const data = await response.json();
+
+                document.getElementById("result").textContent =
+                    JSON.stringify(data, null, 2);
+
+            } catch (error) {
+                document.getElementById("result").textContent =
+                    "Error: " + error.message;
+            }
+        }
+
+        async function getPatient() {
+            const id = document.getElementById("patient_id").value.trim();
+
+            if (!id) {
+                alert("Enter Patient ID");
+                return;
+            }
+
+            callAPI("/patient/" + encodeURIComponent(id));
+        }
+
+    </script>
+
+</body>
+</html>
