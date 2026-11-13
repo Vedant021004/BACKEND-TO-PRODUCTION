@@ -49,3 +49,22 @@ def view_patient(
         return data[patient_id]
 
     raise HTTPException(status_code=404, detail="Patient not found")
+
+
+@app.get("/patients/sort")
+def sort_patients(sort_by: str = "age", order: str = "asc"):
+    data = load()
+
+    if sort_by not in ["name", "age", "bmi", "weight"]:
+        raise HTTPException(status_code=400, detail="Invalid sort field")
+
+    if order not in ["asc", "desc"]:
+        raise HTTPException(status_code=400, detail="Invalid order")
+
+    patients = list(data.values())
+
+    return sorted(
+        patients,
+        key=lambda p: p[sort_by],
+        reverse=(order == "desc")
+    )
