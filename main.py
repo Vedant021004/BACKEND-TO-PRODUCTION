@@ -1,70 +1,34 @@
-from fastapi import FastAPI, HTTPException, Path, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
+
+from fastapi import FastAPI
+from pydantic import BaseModel
 import json
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"]
-)
-
-def load():
-    with open("patients.json") as f:
-        return json.load(f)
+class Patient(BaseModel):
+    name: str
+    age: int
+    query: list[str] = []
 
 
-@app.get("/")
-def hello():
-    return {"message": "Patient Management System API"}
+# POST - Save patient
+@app.post("/patient")
+def add_patient(patient: Patient):
+
+    with open("patient.json", "r") as file:
+        data = json.load(file)
+
+    data.append(patient.model_dump())
+
+    with open("patient.json", "w") as file:
+        json.dump(data, file, indent=4)
+
+    return {"message": "Patient saved successfully"}
 
 
-@app.get("/about")
-def about():
-    return {"message": "API to manage patient records"}
+# GET - Read patients
+@app.get("/patient")
+def get_patients():
 
-
-@app.get("/view")
-def view_data():
-    return load()
-
-
-@app.get("/{name}")
-def get_city(
-    name: str = Path(..., description="Name of the patient", example="Ananya")
-):
-    data = load()
-    return {"city": data.get(name, {}).get("city", "Not found")}
-
-
-@app.get("/patient/{patient_id}")
-def view_patient(
-    patient_id: str = Path(..., description="ID of the patient in the DB", example="P001")
-):
-    data = load()
-
-    if patient_id in data:
-        return data[patient_id]
-
-    raise HTTPException(status_code=404, detail="Patient not found")
-
-
-@app.get("/patients/sort")
-def sort_patients(sort_by: str = "age", order: str = "asc"):
-    data = load()
-
-    if sort_by not in ["name", "age", "bmi", "weight"]:
-        raise HTTPException(status_code=400, detail="Invalid sort field")
-
-    if order not in ["asc", "desc"]:
-        raise HTTPException(status_code=400, detail="Invalid order")
-
-    patients = list(data.values())
-
-    return sorted(
-        patients,
-        key=lambda p: p[sort_by],
-        reverse=(order == "desc")
-    )
+    with open("patient.json", "r") as file:
+        return json.load(file)
